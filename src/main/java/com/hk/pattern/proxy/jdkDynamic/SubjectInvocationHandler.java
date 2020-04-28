@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 public class SubjectInvocationHandler implements InvocationHandler {
 
-    private Object target;
+    private final Object target;
 
     public SubjectInvocationHandler(Object target) {
         this.target = target;
